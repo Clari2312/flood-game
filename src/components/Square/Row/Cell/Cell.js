@@ -1,25 +1,17 @@
-import {Component} from "react";
+import { Component } from "react";
 import "./Cell.css";
 
 class Cell extends Component {
-  state = { value: 0 };
-
-  componentDidMount(){
-    this.setState({
-      value:this.props.cellNumber
-    })
+  render() {
+    let className = "cell";
+    return (
+      <div className={className}>
+        {this.props.matrixRand.length > 0
+          ? this.props.matrixRand[this.props.indexRow][this.props.indexCol]
+          : null}
+      </div>
+    );
   }
-  
+}
 
-    render() {
-      let className = "cell";
-      console.log("cel...",this.props)
-      return (
-        <div className={className} value={this.props.cellNumber}>
-        
-        </div>
-      );  
-    }  
-  }
-  
-  export default Cell;
+export default Cell;
