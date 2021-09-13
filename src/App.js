@@ -1,7 +1,6 @@
 import "./App.css";
-import Square from "./components/Square/Square";
+import { Square, Button } from "./components";
 import { useState } from "react";
-import Button from "./components/Square/Button/Button";
 
 const App = () => {
   // state = {
