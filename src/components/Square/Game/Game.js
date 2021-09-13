@@ -1,3 +1,4 @@
+import { Component } from "react";
 import Row from "../Row/Row";
 import Cell from "../Row/Cell/Cell";
 
