@@ -1,14 +1,5 @@
-import { Component} from "react";
+const Row = (props) => {
+  return <div className="row">{props.children}</div>;
+};
 
-class Row extends Component {
-  
-    render() {
-      return (
-        <div className="row" >
-          {this.props.children}
-        </div>  
-      );  
-    }  
-  }
-  
-  export default Row;
+export default Row;
